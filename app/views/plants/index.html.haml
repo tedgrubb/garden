@@ -1,0 +1,18 @@
+%h1 Listing plants
+
+%table
+  %tr
+    %th Name
+    %th Days to harvest
+
+  - @plants.each do |plant|
+    %tr
+      %td= plant.name
+      %td= plant.days_to_harvest
+      %td= link_to 'Show', plant
+      %td= link_to 'Edit', edit_plant_path(plant)
+      %td= link_to 'Destroy', plant, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Plant', new_plant_path

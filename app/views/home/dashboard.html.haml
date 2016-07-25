@@ -1,0 +1,6 @@
+%h3 Gardens
+%ul.list
+  - @gardens.each do |garden|
+    %li
+      %h4= link_to garden.name
+      %p= garden.style

@@ -1,0 +1,37 @@
+!!! 5
+%html{ :lang => "en"}
+  %head
+    %meta{ :charset => "utf-8" }
+
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+    %title= content_for?(:title) ? yield(:title) : "Garden Plan"
+
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tag
+
+    %script{type:"text/javascript", src:"//use.typekit.net/irm3byo.js"}
+    %script{type:"text/javascript"}
+      try{Typekit.load();}
+      catch(e){}
+
+    :javascript
+      #{yield :js}
+
+  %body#home
+    #header
+      #logo Garden Plan
+    #main
+      #home-modal
+        %h1.tk-lobster
+          Garden Plan
+        %p{style: "margin-bottom:8rem;"}
+          %span{style: "color: #FFF;font-weight: 400;font-size:2rem;text-shadow:0 1px 2px rgba(0,0,0,0.5);"}   Let's start a vegetable garden.
+        %p
+          = link_to "Get Started &raquo;".html_safe, nil, style: "background: rgba(0,0,0,0.3);display:inline-block; border-radius: 10px;padding: 5px 20px;font-size:1.8em;font-weight: 100;color: #FFF;border:1px solid"
+      .background{style: "background-image: url(#{asset_path('garden-bg.jpg')})"}
+
+    .div{style:"height:1000px;"}
+
+    = javascript_include_tag "application"

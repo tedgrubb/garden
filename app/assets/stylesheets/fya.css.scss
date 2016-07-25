@@ -1,0 +1,81 @@
+// Core
+// blocks!
+
+$mixins:
+  "text",
+  "display",
+  "position",
+  "box-model"
+  "background";
+
+// @each $m in $mixins {
+//   @mixin $m { @content; }
+// }
+
+// Mixin Properties
+// TODO: Make this an array;
+
+@mixin text       { @content; }
+@mixin display    { @content; }
+@mixin position   { @content; }
+@mixin box-model  { @content; }
+@mixin background { @content; }
+
+// Helper Methods
+@mixin position($position, $top, $left, $bottom, $right) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+@mixin dimensions($display, $width, $height) {
+  display: $display;
+  width: $width;
+  height: $height;
+}
+
+
+// API
+
+ul.list {
+  @include box-model {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+  }
+
+  @include dimensions(block, 200px, 200px);
+  @include position(relative, 0, 0, 0, 0);
+
+  @include display {
+
+  }
+
+  // @include position {
+  //   @include offset(relative, 0, 0, 0, 0);
+  // }
+
+  @include text {
+    color: #222;
+    text-transform: uppercase;
+    text-align: left;
+    text-indent: none;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  @include background {
+
+  }
+
+  li {
+    a {
+      &:hover {
+        @include text {
+          color: green;
+        }
+      }
+    }
+  }
+}

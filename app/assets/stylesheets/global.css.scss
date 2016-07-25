@@ -1,0 +1,30 @@
+// Helpers
+
+.center {
+  text-align: center;
+}
+
+// Layout
+
+.f-topbar-fixed {
+  padding-top: 0 !important;
+  padding-bottom: 60px;
+}
+
+.header {
+  .top-bar {
+    height: 60px;
+    line-height: 60px;
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+  }
+  a.logo {
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.container {
+  padding-top: 80px;
+}

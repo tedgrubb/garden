@@ -1,0 +1,101 @@
+= content_for :js do
+  :plain
+    window.garden_id = #{@garden.id};
+
+%p#notice= notice
+
+#garden-info.row
+  .column.medium-6
+    %h4= @garden.name
+  .column.medium-6
+    .right{style: "padding-top:8px"}
+      %span.fi-crop
+      = "#{@garden.width.to_i}W x #{@garden.length.to_i}L x #{@garden.depth.to_i}D"
+      %span.fi-clock{style: "padding-left:10px"}
+      = "#{@garden.hours_of_sun.to_i} hours"
+      %span.fi-thumbnails{style: "padding-left:10px"}
+      = @garden.style
+      %span.fi-pencil{style: "padding-left:10px"}
+      = link_to 'edit', edit_garden_path(@garden)
+
+%hr{style: "margin-top: 0;margin-bottom:40px;"}
+
+  - GardenPlant.group_by_plant(@garden.garden_plants.unharvested).in_groups_of(4) do |group|
+    .row{style: "margin-bottom:10px"}
+      - group.each do |_, plants|
+        - next if plants.nil?
+        - plant = plants.first
+        .columns.medium-3
+          .garden-plant
+            .photo
+              - case plant.name
+              - when 'Kale'
+                = image_tag 'http://i-cms.linternaute.com/image_cms/original/1782205-kale-ce-choux-vert-tendance-et-bon-pour-la-sante.jpg'
+            .name
+              %strong= plant.name
+              - if plant.harvest_time.today?
+                \- Ready
+              - else
+                = " - in #{distance_of_time_in_words_to_now(plant.harvest_time)}"
+
+.row
+  #garden-editor.column.medium-12{style: "display:none"}
+    #garden-controls.row.collapse{style: "display:none"}
+      .column.medium-12
+        .left{style: "margin-right: 20px"}
+          = select_tag :plant, options_for_select(@plants.collect{ |plant| [plant.name, plant.id] }, nil), prompt: "Choose something to plant..."
+        .left
+          = link_to "Mark as harvested", nil, id: 'harvest', class: 'button tiny radius success'
+
+
+    %table.garden-table{cellpadding: 0, cellspacing: 0}
+      - (1..9).each do |num|
+        %tr
+          - (1..18).each do |num|
+            %td.cell
+
+    %table.garden-table{cellpadding: 0, cellspacing: 0}
+      - @garden.length.to_i.times do |length_index|
+        %tr
+          - @garden.width.to_i.times do |width_index|
+            - gp = GardenPlant.unharvested.where(garden_id: @garden.id, y_pos: length_index+1, x_pos: width_index+1).first
+            %td.cell
+              .inset
+                - if gp
+                  = gp.name
+                  .percent
+                    - days_in = (Time.now - gp.created_at).to_i / (24 * 60 * 60)
+                    - end_date = gp.days_to_harvest > 0 ? gp.days_to_harvest : 1
+                    - percent = [((days_in.to_f / end_date.to_f) * 100).to_i, 100].min
+                    .percent-complete{style: "background-color: hsl(#{percent}, 80%, 45%); width: #{percent}%; opacity: #{0.2 + (percent.to_f/100)}"}
+                - else
+                  \-
+
+  .column.medium-4{style: "display:none"}
+    - # TODO: Store harvest_date on the garden_plant
+    / %h5 This week
+    / %h5 Next week
+    / %h5 Next month
+    .row.collapse
+      .column.medium-12
+        %dl.plant-list
+          - GardenPlant.group_by_plant(@garden.garden_plants.unharvested).each do |group, plants|
+            - plant = plants.first
+            %dt
+              %strong= "#{plant.name}"
+              %br
+              - if !plant.harvest_time.today?
+                = " - in #{distance_of_time_in_words_to_now(plant.harvest_time)}"
+
+      %h4 History
+      %dl.plant-list
+        - @garden.garden_plants.harvested.group_by { |gp| [gp.plant_id, gp.created_at.to_i] }.each do |group, plants|
+          - plant = plants.first
+          %dt
+            %strong= "#{pluralize(plants.size, plant.name)}"
+            %br
+            = "on #{plant.harvested_at.strftime("%D")}"
+
+- # TODO: REMOVE THIS
+- @forcast.inspect
+- @forcast.daily.data.first.map{|k, v| "#{k}: #{v}" }

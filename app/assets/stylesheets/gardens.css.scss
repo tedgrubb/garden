@@ -1,0 +1,197 @@
+$primary-color: #222;
+$secondary-color: #444;
+$color-teal-dark: #1abc9c;
+$color-blue-dark: #34495e;
+$color-brown-dark: #634A2E;
+$border-radius: 2px;
+// Place all the styles related to the Gardens controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-size-grande: 1.4rem;
+$font-size-large: 1.2rem;
+$font-size-normal: 1rem;
+$font-size-medium: 0.8rem;
+$font-size-small: 0.6rem;
+
+h4 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.garden-plant {
+  height: 140px;
+  background: #FFF;
+  .photo {
+    height: 100px;
+    overflow: hidden;
+  }
+  .name {
+    padding: 12px;
+    font-size: $font-size-medium;
+  }
+}
+
+dl.plant-list {
+  font-size: 13px;
+  margin-left: -5%;
+  dt {
+    color: #666;
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    font-weight: normal;
+    margin-bottom: 5px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: #FFF;
+  }
+}
+
+.percent {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 1px;
+  height: 7px;
+  border-radius: 10px;
+  border: 1px solid #DDD;
+  .percent-complete {
+    width: 20%;
+    height: 3px;
+    border-radius: 12px;
+  }
+}
+
+#garden-info {
+  color: #333;
+  a {
+    color: #333;
+    font-weight: bold;
+  }
+  h4 {
+    color: #333;
+  }
+}
+
+$garden-table-background: #046EDC;
+$garden-table-border: #FFF;
+$garden-table-text-color: lighten($garden-table-background, 20%);
+$garden-table-highlight: #FFF;
+
+#garden-controls {
+  padding: 10px;
+  border-radius: $border-radius;
+margin-bottom: 10px;
+  background: lighten($garden-table-background, 50%);
+  border: 1px solid lighten($garden-table-background, 42%);
+  select {
+    margin: 0;
+  }
+  .button {
+    margin-bottom: 0;
+  }
+}
+
+table.garden-table {
+  border-collapse:collapse;
+  background: lighten($garden-table-background, 50%);
+  border: 1px solid $garden-table-background;
+  td {
+    border-collapse:collapse;
+    font-size: 10px;
+    text-align: center;
+    padding: 0 2px;
+    width: 60px;
+    height: 60px;
+    line-height: 12px;
+    color: $garden-table-text-color;
+    background: lighten($garden-table-background, 50%);
+    border: 1px solid lighten($garden-table-background, 42%);
+    background-clip: padding-box;
+    &.active {
+      box-shadow: inset 0 0 0 2px $garden-table-highlight;
+    }
+  }
+  // tr:nth-child(even) {
+  //   td {
+  //     background: darken($garden-table-background, 2%);
+  //   }
+  // }
+  * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+.bed {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  border: 1px solid #CCC;
+  border-right: none;
+  width: 500px;
+  height: 500px;
+  .row {
+    max-width: 100%;
+    height: 83px;
+  }
+  .columns {
+    height: 100%;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #f6f6f6;
+    border-collapse: collapse;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.t-calendar {
+  height: 100%;
+  .t-row {
+    margin-top: -2px;
+    height: 20%;
+  }
+  table {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    td {
+      border: 1px solid #CCC;
+    }
+  }
+}
+
+.calendar {
+  border-right: none;
+  width: 100%;
+  height: 500px;
+  .row {
+    max-width: 100%;
+    height: 140px;
+  }
+  .columns {
+    height: 100%;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #DDD;
+    border-collapse: collapse;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .day-label {
+    color: #999;
+    text-align: center;
+    min-width: 40px;
+    padding: 10px;
+    margin-left: -15px;
+    display: inline-block;
+  }
+}

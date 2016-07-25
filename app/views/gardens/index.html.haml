@@ -1,0 +1,31 @@
+%h1 Listing gardens
+
+%table
+  %tr
+    %th Name
+    %th Style
+    %th User
+    %th Width
+    %th Length
+    %th Depth
+    %th Hours of sun
+    %th
+    %th
+    %th
+
+  - @gardens.each do |garden|
+    %tr
+      %td= garden.name
+      %td= garden.style
+      %td= garden.user_id
+      %td= garden.width
+      %td= garden.length
+      %td= garden.depth
+      %td= garden.hours_of_sun
+      %td= link_to 'Show', garden
+      %td= link_to 'Edit', edit_garden_path(garden)
+      %td= link_to 'Destroy', garden, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Garden', new_garden_path

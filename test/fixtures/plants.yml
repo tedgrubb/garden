@@ -1,0 +1,371 @@
+Plant_1:
+  id: 1
+  name: Beans
+  days_to_harvest: 50
+  created_at: 2014-05-18 07:59:36.300673000 Z
+  updated_at: 2014-05-18 07:59:36.300673000 Z
+
+Plant_2:
+  id: 2
+  name: Beets
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.313566000 Z
+  updated_at: 2014-05-18 07:59:36.313566000 Z
+
+Plant_3:
+  id: 3
+  name: Broccoli
+  days_to_harvest: 70
+  created_at: 2014-05-18 07:59:36.317417000 Z
+  updated_at: 2014-05-18 07:59:36.317417000 Z
+
+Plant_4:
+  id: 4
+  name: Broccoli Raab
+  days_to_harvest: 45
+  created_at: 2014-05-18 07:59:36.321464000 Z
+  updated_at: 2014-05-18 07:59:36.321464000 Z
+
+Plant_5:
+  id: 5
+  name: Brussel Sprouts
+  days_to_harvest: 80
+  created_at: 2014-05-18 07:59:36.327996000 Z
+  updated_at: 2014-05-18 07:59:36.327996000 Z
+
+Plant_6:
+  id: 6
+  name: Cabbage
+  days_to_harvest: 70
+  created_at: 2014-05-18 07:59:36.333033000 Z
+  updated_at: 2014-05-18 07:59:36.333033000 Z
+
+Plant_7:
+  id: 7
+  name: Chinese Cabbage
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.339814000 Z
+  updated_at: 2014-05-18 07:59:36.339814000 Z
+
+Plant_8:
+  id: 8
+  name: Carrots
+  days_to_harvest: 70
+  created_at: 2014-05-18 07:59:36.345065000 Z
+  updated_at: 2014-05-18 07:59:36.345065000 Z
+
+Plant_9:
+  id: 9
+  name: Cauliflower
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.349297000 Z
+  updated_at: 2014-05-18 07:59:36.349297000 Z
+
+Plant_10:
+  id: 10
+  name: Celery
+  days_to_harvest: 90
+  created_at: 2014-05-18 07:59:36.353292000 Z
+  updated_at: 2014-05-18 07:59:36.353292000 Z
+
+Plant_11:
+  id: 11
+  name: Corn
+  days_to_harvest: 70
+  created_at: 2014-05-18 07:59:36.356791000 Z
+  updated_at: 2014-05-18 07:59:36.356791000 Z
+
+Plant_12:
+  id: 12
+  name: Cucumber
+  days_to_harvest: 65
+  created_at: 2014-05-18 07:59:36.361149000 Z
+  updated_at: 2014-05-18 07:59:36.361149000 Z
+
+Plant_13:
+  id: 13
+  name: Eggplant
+  days_to_harvest: 70
+  created_at: 2014-05-18 07:59:36.366545000 Z
+  updated_at: 2014-05-18 07:59:36.366545000 Z
+
+Plant_14:
+  id: 14
+  name: Kale
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.371185000 Z
+  updated_at: 2014-05-18 07:59:36.371185000 Z
+
+Plant_15:
+  id: 15
+  name: Kohlrabi
+  days_to_harvest: 70
+  created_at: 2014-05-18 07:59:36.377102000 Z
+  updated_at: 2014-05-18 07:59:36.377102000 Z
+
+Plant_16:
+  id: 16
+  name: Leek
+  days_to_harvest: 140
+  created_at: 2014-05-18 07:59:36.382579000 Z
+  updated_at: 2014-05-18 07:59:36.382579000 Z
+
+Plant_17:
+  id: 17
+  name: Lettuce
+  days_to_harvest: 40
+  created_at: 2014-05-18 07:59:36.391787000 Z
+  updated_at: 2014-05-18 07:59:36.391787000 Z
+
+Plant_18:
+  id: 18
+  name: Muskmelon
+  days_to_harvest: 80
+  created_at: 2014-05-18 07:59:36.396503000 Z
+  updated_at: 2014-05-18 07:59:36.396503000 Z
+
+Plant_19:
+  id: 19
+  name: Okra
+  days_to_harvest: 55
+  created_at: 2014-05-18 07:59:36.401583000 Z
+  updated_at: 2014-05-18 07:59:36.401583000 Z
+
+Plant_20:
+  id: 20
+  name: Onion
+  days_to_harvest: 100
+  created_at: 2014-05-18 07:59:36.405451000 Z
+  updated_at: 2014-05-18 07:59:36.405451000 Z
+
+Plant_21:
+  id: 21
+  name: Bok Choy
+  days_to_harvest: 35
+  created_at: 2014-05-18 07:59:36.409244000 Z
+  updated_at: 2014-05-18 07:59:36.409244000 Z
+
+Plant_22:
+  id: 22
+  name: Parsnips
+  days_to_harvest: 90
+  created_at: 2014-05-18 07:59:36.414182000 Z
+  updated_at: 2014-05-18 07:59:36.414182000 Z
+
+Plant_23:
+  id: 23
+  name: Pea
+  days_to_harvest: 70
+  created_at: 2014-05-18 07:59:36.418792000 Z
+  updated_at: 2014-05-18 07:59:36.418792000 Z
+
+Plant_24:
+  id: 24
+  name: Peanut
+  days_to_harvest: 120
+  created_at: 2014-05-18 07:59:36.426036000 Z
+  updated_at: 2014-05-18 07:59:36.426036000 Z
+
+Plant_25:
+  id: 25
+  name: Pepper
+  days_to_harvest: 70
+  created_at: 2014-05-18 07:59:36.432204000 Z
+  updated_at: 2014-05-18 07:59:36.432204000 Z
+
+Plant_26:
+  id: 26
+  name: Potato
+  days_to_harvest: 100
+  created_at: 2014-05-18 07:59:36.437328000 Z
+  updated_at: 2014-05-18 07:59:36.437328000 Z
+
+Plant_27:
+  id: 27
+  name: Pumpkin
+  days_to_harvest: 100
+  created_at: 2014-05-18 07:59:36.441090000 Z
+  updated_at: 2014-05-18 07:59:36.441090000 Z
+
+Plant_28:
+  id: 28
+  name: Radish
+  days_to_harvest: 30
+  created_at: 2014-05-18 07:59:36.445160000 Z
+  updated_at: 2014-05-18 07:59:36.445160000 Z
+
+Plant_29:
+  id: 29
+  name: Spinach
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.449260000 Z
+  updated_at: 2014-05-18 07:59:36.449260000 Z
+
+Plant_30:
+  id: 30
+  name: Squash
+  days_to_harvest: 50
+  created_at: 2014-05-18 07:59:36.462819000 Z
+  updated_at: 2014-05-18 07:59:36.462819000 Z
+
+Plant_31:
+  id: 31
+  name: Sweet Potato
+  days_to_harvest: 100
+  created_at: 2014-05-18 07:59:36.467947000 Z
+  updated_at: 2014-05-18 07:59:36.467947000 Z
+
+Plant_32:
+  id: 32
+  name: Tomatillo
+  days_to_harvest: 65
+  created_at: 2014-05-18 07:59:36.475345000 Z
+  updated_at: 2014-05-18 07:59:36.475345000 Z
+
+Plant_33:
+  id: 33
+  name: Tomato
+  days_to_harvest: 85
+  created_at: 2014-05-18 07:59:36.483092000 Z
+  updated_at: 2014-05-18 07:59:36.483092000 Z
+
+Plant_34:
+  id: 34
+  name: Turnip
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.489470000 Z
+  updated_at: 2014-05-18 07:59:36.489470000 Z
+
+Plant_35:
+  id: 35
+  name: Rutabagas
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.497097000 Z
+  updated_at: 2014-05-18 07:59:36.497097000 Z
+
+Plant_36:
+  id: 36
+  name: Watermelon
+  days_to_harvest: 85
+  created_at: 2014-05-18 07:59:36.504842000 Z
+  updated_at: 2014-05-18 07:59:36.504842000 Z
+
+Plant_37:
+  id: 37
+  name: Zucchini
+  days_to_harvest: 50
+  created_at: 2014-05-18 07:59:36.514770000 Z
+  updated_at: 2014-05-18 07:59:36.514770000 Z
+
+Plant_38:
+  id: 38
+  name: Basil
+  days_to_harvest: 85
+  created_at: 2014-05-18 07:59:36.519505000 Z
+  updated_at: 2014-05-18 07:59:36.519505000 Z
+
+Plant_39:
+  id: 39
+  name: Chamomile
+  days_to_harvest: 0
+  created_at: 2014-05-18 07:59:36.523477000 Z
+  updated_at: 2014-05-18 07:59:36.523477000 Z
+
+Plant_40:
+  id: 40
+  name: Chives
+  days_to_harvest: 80
+  created_at: 2014-05-18 07:59:36.527626000 Z
+  updated_at: 2014-05-18 07:59:36.527626000 Z
+
+Plant_41:
+  id: 41
+  name: Cilantro
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.534465000 Z
+  updated_at: 2014-05-18 07:59:36.534465000 Z
+
+Plant_42:
+  id: 42
+  name: Dill
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.540449000 Z
+  updated_at: 2014-05-18 07:59:36.540449000 Z
+
+Plant_43:
+  id: 43
+  name: Fennel
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.545194000 Z
+  updated_at: 2014-05-18 07:59:36.545194000 Z
+
+Plant_44:
+  id: 44
+  name: Margoram
+  days_to_harvest: 0
+  created_at: 2014-05-18 07:59:36.551029000 Z
+  updated_at: 2014-05-18 07:59:36.551029000 Z
+
+Plant_45:
+  id: 45
+  name: Mint
+  days_to_harvest: 0
+  created_at: 2014-03-29 12:00:00.000000000 Z
+  updated_at: 2014-05-19 00:35:14.489561000 Z
+
+Plant_46:
+  id: 46
+  name: Parsley
+  days_to_harvest: 60
+  created_at: 2014-05-18 07:59:36.559653000 Z
+  updated_at: 2014-05-18 07:59:36.559653000 Z
+
+Plant_47:
+  id: 47
+  name: Oregano
+  days_to_harvest: 0
+  created_at: 2014-05-18 07:59:36.563707000 Z
+  updated_at: 2014-05-18 07:59:36.563707000 Z
+
+Plant_48:
+  id: 48
+  name: Rosemary
+  days_to_harvest: 0
+  created_at: 2014-05-18 07:59:36.568957000 Z
+  updated_at: 2014-05-18 07:59:36.568957000 Z
+
+Plant_49:
+  id: 49
+  name: Sage
+  days_to_harvest: 0
+  created_at: 2014-05-18 07:59:36.581620000 Z
+  updated_at: 2014-05-18 07:59:36.581620000 Z
+
+Plant_50:
+  id: 50
+  name: Tarragon
+  days_to_harvest: 0
+  created_at: 2014-05-18 07:59:36.585944000 Z
+  updated_at: 2014-05-18 07:59:36.585944000 Z
+
+Plant_51:
+  id: 51
+  name: Thyme
+  days_to_harvest: 0
+  created_at: 2014-05-18 07:59:36.591860000 Z
+  updated_at: 2014-05-18 07:59:36.591860000 Z
+
+Plant_52:
+  id: 52
+  name: Swiss Chard
+  days_to_harvest: 55
+  created_at: 2014-05-18 22:52:34.437408000 Z
+  updated_at: 2014-05-19 00:21:19.391408000 Z
+
+Plant_53:
+  id: 53
+  name: Mustard Greens
+  days_to_harvest: 40
+  created_at: 2014-05-18 22:52:48.633099000 Z
+  updated_at: 2014-05-18 22:52:48.633099000 Z
+

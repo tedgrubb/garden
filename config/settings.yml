@@ -1,0 +1,11 @@
+defaults: &defaults
+  forcastio_api_key:
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

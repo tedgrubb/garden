@@ -1,0 +1,35 @@
+!!! 5
+%html{ :lang => "en"}
+  %head
+    %meta{ :charset => "utf-8" }
+
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+    %title= content_for?(:title) ? yield(:title) : "Garden Plan"
+
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tag
+
+    :javascript
+      #{yield :js}
+
+  %body{id: controller_name.singularize}
+    .fixed.header
+      %nav.top-bar{"data-topbar" => ""}
+        .row
+          .large-3.columns
+            %a.logo{href: ""} Garden Plan
+          .large-6.columns.center
+            = formatted_date
+          .large-3.columns
+            %span.right= format_temperature(@forcast.daily.data.first.temperatureMax)
+
+    .container.row
+      - if @forcast.alerts
+        .alert-box.alert.radius{style: "margin-top:20px;opacity: 0.8"}
+          = @forcast.alerts.first.title
+      .columns.medium-12
+        = yield
+
+    = javascript_include_tag "application"

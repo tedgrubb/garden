@@ -1,0 +1,31 @@
+= form_for @garden do |f|
+  - if @garden.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@garden.errors.count, "error")} prohibited this garden from being saved:"
+      %ul
+        - @garden.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :style
+    = f.text_field :style
+  .field
+    = f.label :user_id
+    = f.text_field :user_id
+  .field
+    = f.label :width
+    = f.text_field :width
+  .field
+    = f.label :length
+    = f.text_field :length
+  .field
+    = f.label :depth
+    = f.text_field :depth
+  .field
+    = f.label :hours_of_sun
+    = f.text_field :hours_of_sun
+  .actions
+    = f.submit 'Save'

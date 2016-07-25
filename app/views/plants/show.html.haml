@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @plant.name
+%p
+  %b Days to harvest:
+  = @plant.days_to_harvest
+
+= link_to 'Edit', edit_plant_path(@plant)
+\|
+= link_to 'Back', plants_path
